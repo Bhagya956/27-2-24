@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <style>
+            
+            
+            img{
+                width: 300px;height: 300px;border: solid yellowgreen;
+                background-color: bisque;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <img src="">
+
+
+
+        <script>
+
+            
+
+var imgg=document.getElementsByTagName("img");
+
+im=localStorage.getItem("image");
+imgg[0].setAttribute("src",im);
+
+
+//dd=localStorage.getItem("data");
+//console.log(JSON.parse(dd));
+
+
+var divv2=document.createElement("div");
+document.body.appendChild(divv2);
+divv2.style.marginLeft="700px";
+divv2.style.marginTop="-300px";
+divv2.style.marginBottom="200px"
+
+
+
+//pp=JSON.parse(d)
+//console.log(pp);`
+dd=localStorage.getItem("data")
+//divv2.Text="(pp)";
+//divv2.appendChild(dd);
+pp=JSON.parse(dd);
+console.log(pp);
+
+var h11=document.createElement("h1");
+h11.innerText="Id:"+pp["id"];
+divv2.appendChild(h11);
+h11.style.color="blue"
+
+//var h11=document.createElement
+
+var h11=document.createElement("h1");
+h11.innerText="Title:"+pp["title"];
+divv2.appendChild(h11);
+h11.style.color="orange"
+
+var h11=document.createElement("h1");
+h11.innerText="Description:"+pp["description"];
+divv2.appendChild(h11);
+h11.style.color="red"
+
+var h11=document.createElement("h1");
+h11.innerText="Category:"+pp["category"];
+divv2.appendChild(h11);
+h11.style.color="green"
+
+var h11=document.createElement("h1");
+h11.innerText="Rating-Rate:"+pp["rating"]["rate"];
+divv2.appendChild(h11);
+h11.style.color="gray"
+
+var h11=document.createElement("h1");
+h11.innerText="Rating-Count:"+pp["rating"]["count"];
+divv2.appendChild(h11);
+h11.style.color="yellow"
+
+var btn=document.createElement("button");
+divv2.appendChild(btn);
+btn.innerText="BUY NOW";
+btn.style.color="blue"
+btn.style.backgroundColor="pink"
+btn.style.fontSize="larger"
+btn.addEventListener("click",cbb)
+
+function cbb(){
+
+
+    
+
+    window.location.assign("./27-2-pjs12.html");
+
+
+    //window.location.assign("./27-2-pjs2.html");
+
+    
+}
+
+
+
+
+
+
+
+
+
+//h11.appendChild(pp);
+//divv2.appendChild(pp);
+//divv2.innerHTML="pp";
+
+
+//divv2.innerHTML=localStorage.getItem(JSON.parse(data));
+
+
+
+
+var divv1=document.createElement("div");
+divv1.setAttribute("style","margin-top:-300px")
+document.body.appendChild(divv1);
+
+var imgg1=document.createElement("img");
+divv1.appendChild(imgg1)
+imgg1.src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRqprksER3ZS6M1gVUmWxpDe-TSdtVHethWwGvmOqalWJEFsHHVLVdNW94sHFPRuA3WlK8DqGhfPrw5B2U";
+imgg1.style.width="200px";
+imgg1.style.height="200px";
+imgg1.addEventListener("click",cb1);
+
+function cb1(){
+   imgg[0].src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRqprksER3ZS6M1gVUmWxpDe-TSdtVHethWwGvmOqalWJEFsHHVLVdNW94sHFPRuA3WlK8DqGhfPrw5B2U";
+//imgg.style.width="200px";
+//imgg.style.height="200px";
+}
+
+var imgg2=document.createElement("img");
+divv1.appendChild(imgg2)
+imgg2.src="https://i3.wp.com/e1.pxfuel.com/desktop-wallpaper/116/382/desktop-wallpaper-virat-kohli-ipl-posted-by-ryan-simpson-virat-kohli-rcb.jpg?strip=all";
+imgg2.style.width="200px";
+imgg2.style.height="200px";
+imgg2.addEventListener("click",cb2);
+
+function cb2(){
+   imgg[0].src="https://i3.wp.com/e1.pxfuel.com/desktop-wallpaper/116/382/desktop-wallpaper-virat-kohli-ipl-posted-by-ryan-simpson-virat-kohli-rcb.jpg?strip=all";
+//imgg.style.width="200px";
+//imgg.style.height="200px";
+}
+
+
+var imgg3=document.createElement("img");
+divv1.appendChild(imgg3)
+imgg3.src="https://static.toiimg.com/thumb/msid-107951680,width-400,resizemode-4/107951680.jpg";
+imgg3.style.width="200px";
+imgg3.style.height="200px";
+imgg3.addEventListener("click",cb3);
+
+function cb3(){
+   imgg[0].src="https://static.toiimg.com/thumb/msid-107951680,width-400,resizemode-4/107951680.jpg";
+//imgg.style.width="200px";
+//imgg.style.height="200px";
+}
+
+
+
+
+
+            //im=localStorage.getItem("image");
+        </script>
+    </body>
+</html>

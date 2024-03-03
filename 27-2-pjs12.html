@@ -1,0 +1,90 @@
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+
+            <style>
+                button{
+                    font-size: larger;
+                }
+                h2{
+                    margin-left:450px;
+                    font-size: 50px;
+                    font-weight: bolder;
+                    font-style: italic;
+                    color: chartreuse;
+                }
+                
+                
+                img{
+                    
+                    width: 300px;height:400px;
+                    margin-left: 700px;
+                    margin-top: 200px;
+                
+                }
+                
+            </style>
+    </head>
+        <body>
+        
+
+            <img src="">
+
+    
+            <script>
+
+                var imgg=document.getElementsByTagName("img");
+
+                im=localStorage.getItem("image");
+                imgg[0].setAttribute("src",im);
+
+
+
+
+                var di=document.createElement("div");
+                document.body.appendChild(di)
+                di.style.width="100px";
+                di.style.height="200px";
+                di.style.marginLeft="300px";
+                di.style.marginTop="90px"
+
+                //h11=document.createElement("h1");
+                //di.appendChild(h11);
+
+                dd=localStorage.getItem("data");
+
+                pp=JSON.parse(dd);
+                //console.log(pp);
+
+
+                h11=document.createElement("h2");
+                h11.innerText="Price:"+pp["price"];
+                di.appendChild(h11);
+                
+                
+                
+
+
+                var btn=document.createElement("button");
+                di.appendChild(btn);
+                btn.innerText="BUY NOW";
+                btn.style.fontSize="larger"
+                btn.style.border="solid"
+                btn.style.backgroundColor="pink"
+                btn.style.marginLeft="500px"
+                btn.style.width="150px"
+                btn.style.height="50px"
+                
+
+                btn.addEventListener("click",cbb);
+
+                function cbb(){
+                    window.location.assign("./27-2-pjs123.html");
+                }
+                
+            </script>
+            
+        </body>
+</html>
